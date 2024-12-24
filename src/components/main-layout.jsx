@@ -4,8 +4,8 @@ import { useCallback, useEffect, useState } from 'react'
 import { toast } from 'sonner'
 import DatasetAge from './main-component/dataset-age'
 import DatasetUsage from './main-component/dataset-usage'
-import DatasetBar from './main-component/dataset-bar'
 import Team from './main-component/team'
+import AboutDataset from './main-component/about-dataset'
 
 const MainLayout = () => {
   const [data, setData] = useState([])
@@ -34,9 +34,9 @@ const MainLayout = () => {
       <Hero />
       <Team/>
       <Dataset data={data} />
+      <AboutDataset />
       <DatasetAge data={data} />
       <DatasetUsage data={data} />
-      <DatasetBar data={data} />
     </>
   )
 }

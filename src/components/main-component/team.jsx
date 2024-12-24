@@ -1,20 +1,21 @@
 import HeadingBox from "../heading-box";
 
 const teamMembers = [
-  { name: "Rizki Rifani", id: "10121284", imgSrc: "https://dummyimage.com/250x200/f5f5f5/fff" },
-  { name: "Rizki Rifani", id: "10121284", imgSrc: "https://dummyimage.com/250x200/f5f5f5/fff" },
-  { name: "Rizki Rifani", id: "10121284", imgSrc: "https://dummyimage.com/250x200/f5f5f5/fff" },
-  { name: "Rizki Rifani", id: "10121284", imgSrc: "https://dummyimage.com/250x200/f5f5f5/fff" }
+  { name: "Ratih Komalasari", id: "10121288", imgSrc: "ratih.jpeg" },
+  { name: "Aditya Suryana", id: "10121297", imgSrc: "aditt.jpeg" },
+  { name: "Rizki Rifani", id: "10121284", imgSrc: "rizki.jpeg" },
+  { name: "Fujianti Azizah", id: "10121292", imgSrc: "https://dummyimage.com/250x200/f5f5f5/fff" },
+  { name: "Asri Rizka", id: "10121299", imgSrc: "https://dummyimage.com/250x200/f5f5f5/fff" }
 ];
 
 const TeamMemberCard = ({ name, id, imgSrc }) => (
   <div className="flex flex-col h-full w-full border-x">
     <div className=" h-[200px]">
-      <img src={imgSrc} alt="" className="object-cover w-full" />
+      <img src={imgSrc} alt="" className="object-cover w-full h-[200px]" />
     </div>
     <div className="flex justify-center items-center flex-col p-4">
-      <h1>{name}</h1>
-      <p>{id}</p>
+      <h1 className="font-semibold">{name}</h1>
+      <p className="text-sm text-muted-foreground font-semibold">{id}</p>
     </div>
   </div>
 );
@@ -23,7 +24,7 @@ const Team = () => {
   return (
     <section>
       <HeadingBox title="Teams" />
-      <div className="grid grid-cols-4">
+      <div className="grid grid-cols-5">
         {teamMembers.map((member, index) => (
           <TeamMemberCard
             key={index}

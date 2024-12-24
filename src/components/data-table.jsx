@@ -51,6 +51,13 @@ const columns = [
     cell: ({ row }) => <div className="capitalize text-center">{row.getValue("Age")}</div>,
   },
   {
+    accessorKey: "Number_of_Apps_Used",
+    header: "Number_of_Apps_Used",
+    cell: ({ row }) => (
+      <div className="capitalize text-center">{row.getValue("Number_of_Apps_Used")}</div>
+    ),
+  },
+  {
     accessorKey: "Total_App_Usage_Hours",
     header: "Total_App_Usage_Hours",
     cell: ({ row }) => (
@@ -64,13 +71,7 @@ const columns = [
       <div className="capitalize text-center">{row.getValue("Daily_Screen_Time_Hours")}</div>
     ),
   },
-  {
-    accessorKey: "Number_of_Apps_Used",
-    header: "Number_of_Apps_Used",
-    cell: ({ row }) => (
-      <div className="capitalize text-center">{row.getValue("Number_of_Apps_Used")}</div>
-    ),
-  },
+
   {
     accessorKey: "Productivity_App_Usage_Hours",
     header: "Productivity_App_Usage_Hours",
@@ -83,6 +84,13 @@ const columns = [
     header: "Social_Media_Usage_Hours",
     cell: ({ row }) => (
       <div className="capitalize text-center">{row.getValue("Social_Media_Usage_Hours")}</div>
+    ),
+  },
+  {
+    accessorKey: "Gaming_App_Usage_Hours",
+    header: "Gaming_App_Usage_Hours",
+    cell: ({ row }) => (
+      <div className="capitalize text-center">{row.getValue("Gaming_App_Usage_Hours")}</div>
     ),
   },
 ]

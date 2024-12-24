@@ -14,23 +14,8 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
-const chartData = [
-  { month: "January", desktop: 186 },
-  { month: "February", desktop: 305 },
-  { month: "March", desktop: 237 },
-  { month: "April", desktop: 73 },
-  { month: "May", desktop: 209 },
-  { month: "June", desktop: 214 },
-]
 
-const chartConfig = {
-  desktop: {
-    label: "Desktop",
-    color: "hsl(var(--chart-1))",
-  },
-}
-
-export function BarChartData() {
+export function BarChartData({ data, chartConfig, dataKey, barData }) {
   return (
     <Card className="border-none shadow-none">
       <CardHeader>
@@ -41,18 +26,17 @@ export function BarChartData() {
         <ChartContainer config={chartConfig}>
           <BarChart
             accessibilityLayer
-            data={chartData}
+            data={data}
             margin={{
               top: 20,
             }}
           >
             <CartesianGrid vertical={true} />
             <XAxis
-              dataKey="month"
+              dataKey={dataKey}
               tickLine={true}
               tickMargin={10}
               axisLine={true}
-              tickFormatter={(value) => value.slice(0, 3)}
             />
             <YAxis
               tickLine={true}
@@ -63,9 +47,9 @@ export function BarChartData() {
             />
             <ChartTooltip
               cursor={false}
-              content={<ChartTooltipContent hideLabel />}
+              content={<ChartTooltipContent />}
             />
-            <Bar dataKey="desktop" fill="var(--color-desktop)" radius={8}>
+            <Bar dataKey={barData} radius={8}>
               <LabelList
                 position="top"
                 offset={12}
