@@ -114,12 +114,12 @@ const AboutDataset = () => {
 							key={card.id}
 							className={
 								selectedCard === card.id
-									? "bg-slate-50 rounded-md font-semibold"
-									: "shadow-none rounded-md cursor-pointer hover:bg-slate-50"
+									? "rounded-md font-bold text-sm"
+									: "shadow-none rounded-md cursor-pointer text-sm"
 							}
 							onClick={() => setSelectedCard(card.id)}
 						>
-							<h1 className="p-3">{card.title}</h1>
+							<h1 className="p-3 ">{card.title}</h1>
 						</Card>
 					))}
 				</div>
