@@ -29,12 +29,11 @@ const DatasetUsageGender = ({data}) => {
     const averageAppsUsedByGender = calculateAverageAppsUsedByGender(data);
     console.log("Average Apps Used by Gender:", averageAppsUsedByGender);
 
-
   return (
     <section>
       <HeadingBox title="Data Penggunaan Berdasarkan Gender" />
       <div className="p-4">
-        <BarChartData data={averageAppsUsedByGender}/>
+        {/* <BarChartData data={averageAppsUsedByGender}/> */}
       </div>
     </section>
   )

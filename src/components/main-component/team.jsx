@@ -2,9 +2,9 @@ import HeadingBox from "../heading-box";
 
 const teamMembers = [
   { name: "Ratih Komalasari", id: "10121288", imgSrc: "ratih.jpeg" },
-  { name: "Aditya Suryana", id: "10121297", imgSrc: "aditt.jpeg" },
+  { name: "Aditya Suryana", id: "10121297", imgSrc: "adit.jpeg" },
   { name: "Rizki Rifani", id: "10121284", imgSrc: "rizki.jpeg" },
-  { name: "Fujianti Azizah", id: "10121292", imgSrc: "https://dummyimage.com/250x200/f5f5f5/fff" },
+  { name: "Fujianti Azizah", id: "10121292", imgSrc: "fuji.jpeg" },
   { name: "Asri Rizka", id: "10121299", imgSrc: "https://dummyimage.com/250x200/f5f5f5/fff" }
 ];
 

@@ -49,6 +49,8 @@ const DatasetUsage = ({ data }) => {
     "Productivity_App_Usage_Hours",
   ]);
 
+	console.log("Total Waktu Penggunaan Aplikasi:", TotalWaktuAplikasi);
+
   return (
     <section>
       <HeadingBox title="Analisis Hubungan Antara Kelompok Usia dan Pola Penggunaan Aplikasi" />
