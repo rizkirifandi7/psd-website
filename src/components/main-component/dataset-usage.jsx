@@ -80,7 +80,6 @@ const DatasetUsage = ({ data }) => {
 		"Productivity_App_Usage_Hours",
 	]);
 
-	console.log("data", TotalJenisAplikasi);
 
 	return (
 		<section>
