@@ -10,7 +10,6 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import {
 	ChartContainer,
-	ChartLegend,
 	ChartTooltip,
 	ChartTooltipContent,
 } from "@/components/ui/chart";
@@ -82,7 +81,6 @@ export function BarMultpleChartData({
 								fontSize={12}
 							/>
 						</Bar>
-						<ChartLegend />
 					</BarChart>
 				</ChartContainer>
 			</CardContent>

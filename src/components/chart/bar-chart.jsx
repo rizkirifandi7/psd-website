@@ -10,7 +10,6 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import {
 	ChartContainer,
-	ChartLegend,
 	ChartTooltip,
 	ChartTooltipContent,
 } from "@/components/ui/chart";

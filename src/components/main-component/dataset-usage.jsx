@@ -59,7 +59,7 @@ const DatasetUsage = ({ data }) => {
 			keys.forEach((key) => {
 				result[key] = filteredData
 					.reduce((sum, item) => sum + parseFloat(item[key]), 0)
-					.toFixed(2);
+					.toFixed(0);
 			});
 			return result;
 		});
