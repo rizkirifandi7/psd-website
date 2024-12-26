@@ -1,4 +1,3 @@
-import { TrendingUp } from "lucide-react";
 import {
 	Bar,
 	BarChart,
@@ -8,7 +7,7 @@ import {
 	YAxis,
 } from "recharts";
 
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import {
 	ChartContainer,
 	ChartTooltip,
@@ -41,7 +40,7 @@ export function BarChartData({ data, chartConfig, dataKey, barData }) {
 							tickCount={5}
 							allowDecimals={false}
 						/>
-						<ChartTooltip cursor={false} content={<ChartTooltipContent />} />
+						<ChartTooltip cursor={true} content={<ChartTooltipContent />} />
 						<Bar dataKey={barData} radius={8}>
 							<LabelList
 								position="top"
@@ -53,14 +52,6 @@ export function BarChartData({ data, chartConfig, dataKey, barData }) {
 					</BarChart>
 				</ChartContainer>
 			</CardContent>
-			<CardFooter className="flex-col items-start gap-2 text-sm">
-				<div className="flex gap-2 font-medium leading-none">
-					Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
-				</div>
-				<div className="leading-none text-muted-foreground">
-					Showing total visitors for the last 6 months
-				</div>
-			</CardFooter>
 		</Card>
 	);
 }
