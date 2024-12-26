@@ -45,6 +45,7 @@ const filterAndCountByGender = (data, gender, fill, category) => {
   return { gender: genderLabel, total: filteredDataGender.length, fill, category };
 };
 
+
 const DatasetAge = ({ data }) => {
   const ageRanges = [
     { min: 18, max: 24, category: "remaja", fill: "var(--color-remaja)" },
@@ -72,6 +73,7 @@ const DatasetAge = ({ data }) => {
     filterAndCountByGender(data, category.gender, category.fill, category.category)
   );
 
+  console.log("unutuk", filteredDataAge);
   return (
     <section>
       <HeadingBox title="Data Umur & Jenis Kelamin" />

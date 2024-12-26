@@ -1,42 +1,95 @@
-import { BarChartData } from "../chart/bar-chart"
-import HeadingBox from "../heading-box"
-
-const calculateAverageAppsUsedByGender = (data) => {
-    const genderGroups = data.reduce((acc, curr) => {
-      const gender = curr.Gender;
-      const appsUsed = parseInt(curr.Number_of_Apps_Used, 10);
-  
-      if (!acc[gender]) {
-        acc[gender] = { totalApps: 0, count: 0 };
-      }
-  
-      acc[gender].totalApps += appsUsed;
-      acc[gender].count += 1;
-  
-      return acc;
-    }, {});
-  
-    const averages = {};
-    for (const gender in genderGroups) {
-      averages[gender] = genderGroups[gender].totalApps / genderGroups[gender].count;
-    }
-  
-    return averages;
-  };
-
+import HeadingBox from "../heading-box";
+import { BarChartUsageGender } from "../chart/bar-chart-usageGender";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Card } from "@/components/ui/card";
 
 const DatasetUsageGender = ({data}) => {
-    const averageAppsUsedByGender = calculateAverageAppsUsedByGender(data);
-    console.log("Average Apps Used by Gender:", averageAppsUsedByGender);
+  const chartConfig = {
+    male: {
+      label: "Laki-laki",
+      color: "hsl(var(--chart-1))",
+    },
+    female: {
+      label: "Perempuan",
+      color: "hsl(var(--chart-2))",
+    },
+  };
+
+  const calculateUsage = (data, usageKey) => {
+    const usageByGender = {};
+    const countByGender = {};
+
+    data.forEach(entry => {
+      const gender = entry.Gender;
+      const usageHours = parseFloat(entry[usageKey]);
+
+      if (usageByGender[gender]) {
+        usageByGender[gender] += usageHours;
+        countByGender[gender] += 1;
+      } else {
+        usageByGender[gender] = usageHours;
+        countByGender[gender] = 1;
+      }
+    });
+
+    return Object.keys(usageByGender).map(gender => ({
+      category: gender === 'Male' ? 'Laki-laki' : 'Perempuan',
+      total: (usageByGender[gender] / countByGender[gender]).toFixed(2),
+      fill: gender === 'Male' ? 'var(--color-male)' : 'var(--color-female)'
+    }));
+  };
+
+  const socialMedia = calculateUsage(data, 'Social_Media_Usage_Hours');
+  const gaming = calculateUsage(data, 'Gaming_App_Usage_Hours');
+  const productivity = calculateUsage(data, 'Productivity_App_Usage_Hours');
 
   return (
     <section>
-      <HeadingBox title="Data Penggunaan Berdasarkan Gender" />
-      <div className="p-4">
-        {/* <BarChartData data={averageAppsUsedByGender}/> */}
-      </div>
-    </section>
-  )
-}
+      <HeadingBox title="Data Penggunaan Jenis Aplikasi Berdasarkan Gender" />
+      <Tabs defaultValue="social" className="w-full p-4">
+        <TabsList className="grid w-full grid-cols-3">
+          <TabsTrigger value="social">Sosial Media</TabsTrigger>
+          <TabsTrigger value="gaming">Gaming</TabsTrigger>
+          <TabsTrigger value="prod">Produktivitas</TabsTrigger>
+        </TabsList>
 
-export default DatasetUsageGender
+        <TabsContent value="social">
+          <Card className="shadow-none rounded-md">
+            <BarChartUsageGender 
+              data={socialMedia}
+              chartConfig={chartConfig}
+              dataKey="category"
+              barData="total"
+            />
+          </Card>
+        </TabsContent>
+
+        <TabsContent value="gaming">
+          <Card className="shadow-none rounded-md">
+            <BarChartUsageGender 
+              data={gaming}
+              chartConfig={chartConfig}
+              dataKey="category"
+              barData="total"
+            />
+          </Card>
+        </TabsContent>
+
+        <TabsContent value="prod">
+          <Card className="shadow-none rounded-md">
+            <BarChartUsageGender 
+              data={productivity}
+              chartConfig={chartConfig}
+              dataKey="category"
+              barData="total"
+            />
+          </Card>
+        </TabsContent>
+      </Tabs>
+      
+      <div className="p-4"></div>
+    </section>
+  );
+};
+
+export default DatasetUsageGender;
