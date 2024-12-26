@@ -5,7 +5,7 @@ const teamMembers = [
   { name: "Aditya Suryana", id: "10121297", imgSrc: "adit.jpeg" },
   { name: "Rizki Rifani", id: "10121284", imgSrc: "rizki.jpeg" },
   { name: "Fujianti Azizah", id: "10121292", imgSrc: "fuji.jpeg" },
-  { name: "Asri Rizka", id: "10121299", imgSrc: "https://dummyimage.com/250x200/f5f5f5/fff" }
+  { name: "Asri Rizka", id: "10121299", imgSrc: "asri.jpg" }
 ];
 
 const TeamMemberCard = ({ name, id, imgSrc }) => (

@@ -8,9 +8,9 @@ import LegendChart from "../legend";
 
 const DatasetUsage = ({ data }) => {
 	const ageGroups = [
-		{ min: 18, max: 24, category: "remaja", fill: "var(--color-remaja)" },
-		{ min: 25, max: 44, category: "dewasa", fill: "var(--color-dewasa)" },
-		{ min: 45, max: 64, category: "lansia", fill: "var(--color-lansia)" },
+		{ min: 18, max: 24, category: "Remaja", fill: "var(--color-remaja)" },
+		{ min: 25, max: 44, category: "Dewasa", fill: "var(--color-dewasa)" },
+		{ min: 45, max: 64, category: "Lansia", fill: "var(--color-lansia)" },
 	];
 
 	const LegendBar = [

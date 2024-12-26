@@ -82,7 +82,6 @@ export function BarMultpleChartData({
 								fontSize={12}
 							/>
 						</Bar>
-						<ChartLegend />
 					</BarChart>
 				</ChartContainer>
 			</CardContent>
