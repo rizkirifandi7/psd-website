@@ -105,7 +105,7 @@ const AboutDataset = () => {
 	const [selectedCard, setSelectedCard] = useState("tentang");
 
 	return (
-		<section>
+		<section id="informasi">
 			<HeadingBox title="Informasi Dataset" />
 			<div className="flex h-[400px]">
 				<div className="basis-1/3 flex flex-col gap-4 p-4 border-r">

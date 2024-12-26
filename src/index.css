@@ -6,6 +6,7 @@
 
 body {
 	font-family: "Inter", sans-serif;
+	scroll-behavior: smooth;
 }
 
 @layer base {
@@ -71,4 +72,3 @@ body {
 		@apply bg-background text-foreground;
 	}
 }
-

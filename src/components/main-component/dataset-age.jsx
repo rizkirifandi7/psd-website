@@ -73,9 +73,8 @@ const DatasetAge = ({ data }) => {
     filterAndCountByGender(data, category.gender, category.fill, category.category)
   );
 
-  console.log("unutuk", filteredDataAge);
   return (
-    <section>
+    <section id="analisa">
       <HeadingBox title="Data Umur & Jenis Kelamin" />
       <div className="flex">
         <div className="flex-1 p-4">
