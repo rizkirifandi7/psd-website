@@ -1,4 +1,3 @@
-import { TrendingUp } from "lucide-react";
 import {
 	Bar,
 	BarChart,
@@ -8,7 +7,7 @@ import {
 	YAxis,
 } from "recharts";
 
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import {
 	ChartContainer,
 	ChartLegend,
@@ -42,7 +41,7 @@ export function BarChartData({ data, chartConfig, dataKey, barData }) {
 							tickCount={5}
 							allowDecimals={false}
 						/>
-						<ChartTooltip cursor={false} content={<ChartTooltipContent />} />
+						<ChartTooltip cursor={true} content={<ChartTooltipContent />} />
 						<Bar dataKey={barData} radius={8}>
 							<LabelList
 								position="top"

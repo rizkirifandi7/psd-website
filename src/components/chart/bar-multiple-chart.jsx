@@ -1,4 +1,3 @@
-import { TrendingUp } from "lucide-react";
 import {
 	Bar,
 	BarChart,
@@ -8,14 +7,7 @@ import {
 	YAxis,
 } from "recharts";
 
-import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import {
 	ChartContainer,
 	ChartLegend,
@@ -33,14 +25,10 @@ export function BarMultpleChartData({
 }) {
 	return (
 		<Card className="border-none shadow-none">
-			<CardHeader>
-				<CardTitle>Bar Chart - Multiple</CardTitle>
-				<CardDescription>January - June 2024</CardDescription>
-			</CardHeader>
 			<CardContent className>
 				<ChartContainer config={chartConfig} className="">
-					<BarChart accessibilityLayer data={data}>
-						<CartesianGrid vertical={false} />
+					<BarChart accessibilityLayer data={data} margin={{ top: 30 }}>
+						<CartesianGrid vertical={true} />
 						<XAxis
 							dataKey={dataKey}
 							tickLine={true}
@@ -98,7 +86,6 @@ export function BarMultpleChartData({
 					</BarChart>
 				</ChartContainer>
 			</CardContent>
-			
 		</Card>
 	);
 }
