@@ -20,30 +20,30 @@ const DatasetUsage = ({ data }) => {
 	];
 
 	const LegendBarMultiple = [
-		{ label: "Total Social Media Usage", color: "bg-chart-1" },
-		{ label: "Total Gaming Usage", color: "bg-chart-2" },
-		{ label: "Total Productivity Usage", color: "bg-chart-4" },
+		{ label: "Total Social Media Usage", color: "bg-chart-6" },
+		{ label: "Total Gaming Usage", color: "bg-chart-7" },
+		{ label: "Total Productivity Usage", color: "bg-chart-8" },
 	];
 
 	const chartConfig = {
-		remaja: { label: "Remaja", color: "hsl(var(--chart-1))" },
-		dewasa: { label: "Dewasa", color: "hsl(var(--chart-2))" },
-		lansia: { label: "Lansia", color: "hsl(var(--chart-4))" },
+		remaja: { label: "Remaja", color: "hsl(var(--chart-3))" },
+		dewasa: { label: "Dewasa", color: "hsl(var(--chart-4))" },
+		lansia: { label: "Lansia", color: "hsl(var(--chart-5))" },
 	};
 
 	const chartConfigMultiple = {
 		totalAppUsage: { label: "Total App Usage", color: "hsl(var(--chart-4))" },
 		totalSocialMediaUsage: {
 			label: "Total Social Media Usage",
-			color: "hsl(var(--chart-1))",
+			color: "hsl(var(--chart-6))",
 		},
 		totalGamingUsage: {
 			label: "Total Gaming Usage",
-			color: "hsl(var(--chart-2))",
+			color: "hsl(var(--chart-7))",
 		},
 		totalProductivityUsage: {
 			label: "Total Productivity Usage",
-			color: "hsl(var(--chart-4))",
+			color: "hsl(var(--chart-8))",
 		},
 	};
 
