@@ -63,7 +63,7 @@ const DatasetUsageGender = ({ data }) => {
               judul={"Sosial Media"}
             />
 
-            <CardFooter className="flex-col items-start gap-2 text-sm">
+            <CardFooter className="flex-col items-start gap-2 text-sm mt-4">
               <div className="flex gap-2 font-semibold">Kesimpulan:</div>
               <div className="">
                 <p className="mb-2">

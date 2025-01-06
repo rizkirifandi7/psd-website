@@ -15,7 +15,7 @@ import {
 
 export function BarChartUsageGender({ data, chartConfig, dataKey, barData, judul, deskripsi }) {
 	return (
-		<Card className="rounded-md border-none">
+		<Card className="rounded-md border-none shadow-none">
 			<CardHeader>
 				<CardTitle> {judul} </CardTitle>
 				<CardDescription> {deskripsi} </CardDescription>
