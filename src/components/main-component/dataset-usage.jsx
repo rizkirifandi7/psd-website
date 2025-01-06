@@ -14,9 +14,9 @@ const DatasetUsage = ({ data }) => {
 	];
 
 	const LegendBar = [
-		{ label: "Remaja", color: "bg-chart-1" },
-		{ label: "Dewasa", color: "bg-chart-2" },
-		{ label: "Lansia", color: "bg-chart-4" },
+		{ label: "Remaja", color: "bg-chart-3" },
+		{ label: "Dewasa", color: "bg-chart-4" },
+		{ label: "Lansia", color: "bg-chart-5" },
 	];
 
 	const LegendBarMultiple = [
