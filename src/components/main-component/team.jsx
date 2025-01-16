@@ -1,11 +1,11 @@
 import HeadingBox from "../heading-box";
 
 const teamMembers = [
-	{ name: "Ratih Komalasari", id: "10121288", imgSrc: "ratih.jpeg" },
+	{ name: "Asri Rizka", id: "10121299", imgSrc: "asri.jpeg" },
 	{ name: "Aditya Suryana", id: "10121297", imgSrc: "adit.jpeg" },
-	{ name: "Fujianti Azizah", id: "10121292", imgSrc: "fuji.jpeg" },
+	{ name: "Ratih Komalasari", id: "10121288", imgSrc: "ratih.jpeg" },
 	{ name: "Rizki Rifani", id: "10121284", imgSrc: "rizki.jpeg" },
-	{ name: "Asri Rizka", id: "10121299", imgSrc: "asri.jpg" },
+	{ name: "Fujianti Azizah", id: "10121292", imgSrc: "fuji.jpeg" },
 ];
 
 const TeamMemberCard = ({ name, id, imgSrc }) => (
