@@ -29,8 +29,8 @@ const cardData = [
 					aplikasi, pemasaran, dan peneliti UX.
 				</p>
 				<p>
-					Dataset ini berguna untuk menganalisis keterlibatan pengguna ponsel, dan
-					kebiasaan penggunaan aplikasi. Dataset ini dapat membantu
+					Dataset ini berguna untuk menganalisis keterlibatan pengguna ponsel,
+					dan kebiasaan penggunaan aplikasi. Dataset ini dapat membantu
 					mengidentifikasi tren untuk pemasaran, pengembangan aplikasi, dan
 					optimalisasi pengalaman pengguna.
 				</p>
@@ -50,7 +50,8 @@ const cardData = [
 				</p>
 				<p>
 					Hasil utama mencakup wawasan tentang preferensi penggunaan aplikasi,
-					kebiasaan waktu layar harian, dampak usia, serta jenis kelamin terhadap perilaku penggunaan ponsel.
+					kebiasaan waktu layar harian, dampak usia, serta jenis kelamin
+					terhadap perilaku penggunaan ponsel.
 				</p>
 				<p>
 					Analisis ini dapat membantu mengidentifikasi pola untuk meningkatkan
@@ -67,31 +68,38 @@ const cardData = [
 			<>
 				<h1 className="text-base font-semibold">Attribute Dataset</h1>
 				<ul className="list-disc pl-4 space-y-1">
-					<li>id: ID unik pengguna</li>
-					<li>age: Usia pengguna</li>
-					<li>Gender: Jenis kelamin pengguna</li>
 					<li>
-						Number_of_Apps_Used: Jumlah aplikasi yang digunakan oleh pengguna
+						<b>id</b>: ID unik pengguna
 					</li>
 					<li>
-						Daily_Screen_Time_Hours: Jumlah jam pengguna menghabiskan waktu di
-						layar setiap hari
+						<b>age</b>: Usia pengguna
 					</li>
 					<li>
-						Gaming_App_Usage_Hours: Jumlah jam pengguna menghabiskan waktu
-						menggunakan aplikasi game setiap hari
+						<b>Gender</b>: Jenis kelamin pengguna
 					</li>
 					<li>
-						Total_App_Usage_Hours: Jumlah total jam pengguna menghabiskan waktu
-						menggunakan aplikasi setiap hari
+						<b>Number_of_Apps_Used</b>: Jumlah aplikasi yang digunakan oleh
+						pengguna
 					</li>
 					<li>
-						Social_Media_Usage_Hours: Jumlah jam pengguna menghabiskan waktu
-						menggunakan media sosial setiap hari
+						<b>Daily_Screen_Time_Hours</b>: Jumlah jam pengguna menghabiskan
+						waktu di layar setiap hari
 					</li>
 					<li>
-						Productivity_App_Usage_Hours: Jumlah jam pengguna menghabiskan waktu
-						menggunakan aplikasi produktivitas setiap hari
+						<b>Gaming_App_Usage_Hours</b>: Jumlah jam pengguna menghabiskan
+						waktu menggunakan aplikasi game setiap hari
+					</li>
+					<li>
+						<b>Total_App_Usage_Hours</b>: Jumlah total jam pengguna menghabiskan
+						waktu menggunakan aplikasi setiap hari
+					</li>
+					<li>
+						<b>Social_Media_Usage_Hours</b>: Jumlah jam pengguna menghabiskan
+						waktu menggunakan media sosial setiap hari
+					</li>
+					<li>
+						<b>Productivity_App_Usage_Hours</b>: Jumlah jam pengguna
+						menghabiskan waktu menggunakan aplikasi produktivitas setiap hari
 					</li>
 				</ul>
 			</>
