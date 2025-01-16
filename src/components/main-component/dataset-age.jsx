@@ -4,15 +4,15 @@ import HeadingBox from "../heading-box";
 const chartConfigAge = {
   remaja: {
     label: "Remaja",
-    color: "hsl(var(--chart-1))",
+    color: "hsl(var(--chart-3))",
   },
   dewasa: {
     label: "Dewasa",
-    color: "hsl(var(--chart-2))",
+    color: "hsl(var(--chart-4))",
   },
   lansia: {
     label: "Lansia",
-    color: "hsl(var(--chart-3))",
+    color: "hsl(var(--chart-5))",
   },
 };
 
