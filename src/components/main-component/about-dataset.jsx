@@ -29,9 +29,8 @@ const cardData = [
 					aplikasi, pemasaran, dan peneliti UX.
 				</p>
 				<p>
-					Dataset ini berguna untuk menganalisis keterlibatan pengguna ponsel,
-					kebiasaan penggunaan aplikasi, dan dampak faktor demografis terhadap
-					perilaku penggunaan ponsel. Dataset ini dapat membantu
+					Dataset ini berguna untuk menganalisis keterlibatan pengguna ponsel, dan
+					kebiasaan penggunaan aplikasi. Dataset ini dapat membantu
 					mengidentifikasi tren untuk pemasaran, pengembangan aplikasi, dan
 					optimalisasi pengalaman pengguna.
 				</p>
@@ -51,8 +50,7 @@ const cardData = [
 				</p>
 				<p>
 					Hasil utama mencakup wawasan tentang preferensi penggunaan aplikasi,
-					kebiasaan waktu layar harian, dan dampak usia, jenis kelamin, serta
-					lokasi terhadap perilaku penggunaan ponsel.
+					kebiasaan waktu layar harian, dampak usia, serta jenis kelamin terhadap perilaku penggunaan ponsel.
 				</p>
 				<p>
 					Analisis ini dapat membantu mengidentifikasi pola untuk meningkatkan
