@@ -8,8 +8,10 @@ const Hero = () => {
 			<div className="flex items-center">
 				<div className="basis-1/2 space-y-5">
 					<h1 className="text-4xl font-bold">
-						Penggunaan Smartphone dan Perilaku
+						Scroll, Play dan Write
+						Perbandingan Pola Digital Gen Z, Milenial dan Boomer
 					</h1>
+			
 					<p className="text-base text-muted-foreground">
 						Memberikan informasi tentang Keterlibatan Pengguna dan Pola
 						Penggunaan Aplikasi di Berbagai Kelompok Usia.
